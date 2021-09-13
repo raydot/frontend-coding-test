@@ -1,0 +1,18 @@
+function findBiggestNumber(arr) {
+  if(arr.length === 0) {
+    console.log('You have provided an empty array');
+    return null;
+  }
+  
+  var final = arr.sort(function(a,b) {
+    return parseInt((b.toString()+a.toString()),10)-
+    parseInt((a.toString()+b.toString()),10);
+  });
+  
+  return final.join('');
+}
+
+var arr = [];
+
+var x = findBiggestNumber(arr);
+console.log(x);

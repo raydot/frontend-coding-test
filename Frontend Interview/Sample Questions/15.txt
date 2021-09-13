@@ -1,0 +1,44 @@
+function checkPower(a,b) {
+  var absoluteA = Math.abs(a);
+  var absoluteB = Math.abs(b);
+  
+  if(absoluteB===1)
+    return (absoluteA===1)?true:false;
+
+  else if(b===0)
+    return (a===0)?true:false;
+
+  else if(absoluteA>=1 && absoluteB>=1) {
+    var min = b;
+    while(absoluteB < absoluteA) {
+      b = b * min;
+      absoluteB = Math.abs(b);
+      
+      if(b === a)
+        return true;
+    }
+    return false;
+  }
+
+  else if(absoluteA>0 && absoluteA<1 && absoluteB>0 && absoluteB<1) {
+    var min = b;
+    while(absoluteB >= absoluteA) {
+      b = b * min;
+      
+      //Converting decimal upto 2 places
+      b = +(Math.round(b + "e+6")  + "e-6");
+      absoluteB = Math.abs(b);
+      if(b === a)
+        return true;
+    }
+    return false;
+  }
+  else if(absoluteB>0 && absoluteB<1 && absoluteA>=1)
+    return false;
+};
+
+var numberWhosePowerIsTaken = 40;
+var calculatedNumberAfterPower = 1;
+
+var x = checkPower(calculatedNumberAfterPower,numberWhosePowerIsTaken);
+console.log(x);

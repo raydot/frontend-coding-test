@@ -1,0 +1,22 @@
+var arr = ['dog','god','log','cat','tac'];
+var l = [];
+var m = new Map();
+
+for(var i=0; i<arr.length; i++) {
+  var source = arr[i].split('').sort().join('');
+  
+  if(m.has(source) === false) {
+    l = [];
+    l.push(arr[i])
+    m.set(source, l);
+  }
+  else
+  {
+      m.get(source).push(arr[i]); 
+  }
+  
+}
+
+for (var value of m.values()) {
+  console.log(value);
+}
