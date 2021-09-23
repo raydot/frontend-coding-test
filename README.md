@@ -1,6 +1,6 @@
 # frontend-coding-test
 
-Coding test for Frontend Dev position 
+Coding test for Frontend Dev position
 
 Generally speaking (but not always) later (higher-numbered) answers will be more effective than earlier ones.
 
@@ -46,6 +46,8 @@ Generally speaking (but not always) later (higher-numbered) answers will be more
 [Stack Exchange Code Review Coverting Improper Fraction to Mixed Number](https://codereview.stackexchange.com/questions/20854/convert-improper-fraction-to-mixed-number-with-javascript)
 
 ## 09. Longest Palindrome in String
+
+[Leetcode Valid Palindrome Problem](https://leetcode.com/problems/valid-palindrome/) Start here!
 
 [Geeks for Geeks Longest Palindrome Set I (Brute Force)](https://www.geeksforgeeks.org/longest-palindrome-substring-set-1/) (Note, the code there is modified in `09-longest-palindrome-brute-force.js` to use Javascript `substr()` in place of whatever is on the substring print function given.) The second part of that set is `09-longest-palindrome-dynamic-1.js`
 
